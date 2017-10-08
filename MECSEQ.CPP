@@ -1,0 +1,19 @@
+#include<iostream.h>
+#include<conio.h>
+int n=7,a[10]={1,2,3,4,5,6,7},ct;
+int seq(int key)
+{        ct++;
+	for(int i=0;i<n-1;i++)
+	{
+		if(key==a[i])
+			return i;
+	}
+	return -1;
+}
+int main()
+{
+	int e=seq(10);
+	clrscr();
+	cout<<ct;
+	return 0;
+}
